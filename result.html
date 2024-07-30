@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="/static/styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Your Mood: {{ emotion }}</h1>
+        <p>{{ message }}</p>
+        <h2>Recommended Songs:</h2>
+        <ul>
+            {% for song in songs %}
+            <li>
+                <a href="{{ song.url }}" target="_blank">{{ song.name }} by {{ song.artist }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
