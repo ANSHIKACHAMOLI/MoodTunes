@@ -1,0 +1,21 @@
+Bollywood Mood-Based Song Recommendation System
+
+Welcome to the Bollywood Mood-Based Song Recommendation System! This project leverages Natural Language Processing (NLP) and machine learning to provide personalized Bollywood song recommendations based on user emotions.
+
+Features:
+Emotion Detection: Utilizes NLP techniques and machine learning models to analyze and classify emotions from textual input, including Happy, Sad, Angry, Fear, and Disgust.
+Personalized Music Recommendations: Integrates with Spotify’s API to recommend Bollywood tracks that align with the detected emotion, enhancing the user’s music experience.
+Web Interface: Developed using Flask, the application features a clean and user-friendly web interface, including Spotify login and emotion-based song suggestions.
+
+Technical Stack:
+Back-End: Flask, Spotipy (Spotify API integration)
+NLP & Machine Learning: NLTK for text preprocessing, Scikit-Learn for emotion classification
+Data Management: joblib for saving and loading processed data, vectorizers, and models
+Front-End: HTML templates rendered with Flask
+
+How It Works:
+Emotion Prediction: The system preprocesses user input text, transforms it into features using a count vectorizer, and predicts the emotion using a RandomForestClassifier.
+Music Recommendation: Based on the predicted emotion, the application queries the Spotify API for relevant Bollywood songs and displays them to the user.
+
+Contributing:
+Feel free to fork the repository and contribute by submitting pull requests or raising issues. Your feedback and contributions are welcome!
